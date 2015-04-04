@@ -1,0 +1,81 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/title_line"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txtMagnitude"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Mag"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="22sp"
+                android:layout_weight="1.2"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Earthquake Details"
+                android:textColor="@android:color/black"
+                android:alpha="0.7"
+                android:textSize="22sp"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton"
+                android:background="#ffffff"
+                android:tint="#000000"
+                android:alpha="0.7"
+                android:src="@drawable/navigation_next_item"
+                android:layout_weight="1.2" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_below="@id/title_line"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txtPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:textSize="18sp"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/txtDate"
+            android:layout_alignLeft="@+id/txtDate"
+            android:layout_alignStart="@+id/txtDate" />
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
